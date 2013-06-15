@@ -25,32 +25,35 @@ body#events.details {
             }
         }
         .gallery-sidebar {
+            background: rgba(127, 127, 127, 0.4);
+            border-radius: 3px;
+            margin:     35px 30px 10px 15px;
             float:      left;
         }
         #event-picture {
             background: #444;
             max-width:  400px;
-            .box-shadow(0px, 2px, 10px, rgba(0, 0, 0, 0.25));
+            .box-shadow(0px, 2px, 10px, rgba(0, 0, 0, 0.2));
 
             margin:     11px;
-            margin-right: 30px;
 
             vertical-align: top;
         }
         #event-registration {
             width:      400px;
             padding-bottom: 30px;
-            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
 
             text-align: center;
 
             #registerLink {
+                .clickable;
                 display:        inline-block;
                 background:     #4F74BB;
-                .box-shadow(0px, 2px, 8px, rgba(0, 0, 0, 0.2));
+                .box-shadow(0px, 2px, 10px, rgba(0, 0, 0, 0.15));
                 border-radius:  8px;
-                border-top:     1px solid #888;
-                border-left:    1px solid #aaa;
                 margin:         20px auto;
                 padding:        18px;
                 padding-top:    16px;
@@ -63,19 +66,17 @@ body#events.details {
                     margin-left: 3px;
                     color:      #f2f2f2;
                 }
-                .clickable;
-                &:hover {
-                    background: #517CCB;
-                }
-                &:active {
-                    background: #4062A1;
-                }
+                &:hover  { background: #517CCB; }
+                &:active { background: #4062A1; }
             }
             p {
                 width:  320px;
                 margin: 0px auto;
 
-                color:  #888;
+                font-family: 'Open Sans Light';
+                font-size:  17px;
+                color:  #666;
+                line-height: 1.6;
             }
         }
         #event-description {
